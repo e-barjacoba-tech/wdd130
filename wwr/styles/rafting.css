@@ -85,3 +85,9 @@ h2 {
     background-color: var(--primary-color);
     color: white;
 }
+
+footer {
+    margin-top: 1rem;
+    border-top: 0.1rem solid #333;
+    text-align: center;
+}
