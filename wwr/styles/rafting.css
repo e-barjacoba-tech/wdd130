@@ -2,7 +2,7 @@
     --primary-color: #14a494;
     --secondary-color: #af916e;
     --accent1-color: #000000;
-    --accent2-color: #895f04; 
+    --accent2-color: #abebec; 
     --heading-font: cursive;
     --body-font: sans-serif;
 }
@@ -73,7 +73,7 @@ h1 {
 .hero article img {
     float: right;
     width: 50px;
-    padding: auto;
+    padding: 0;
     margin: auto;
 }
 
@@ -83,7 +83,7 @@ h2 {
     margin: auto;
     text-align: center;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--accent2-color);
 }
 
 footer {
