@@ -18,7 +18,7 @@ body {
     color: var(--accent1-color);
 }
 
-header, main, footer {
+header, main, footer{
     width: 840px;
     margin: 0 auto;
 }
@@ -74,7 +74,7 @@ h2 {
     margin: auto;
 }
 
-.socialmedia a{
+.socialmedia a {
     text-decoration: none;
 }
 
@@ -133,7 +133,7 @@ h2 {
 .hero2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 2fr);
+    grid-template-rows: 1fr 2fr;
     justify-content: center;
     align-items: center;
 }
@@ -141,4 +141,16 @@ h2 {
 .hero2 h2{
     grid-column: 1 / 4; 
     text-align: center;
+    margin-bottom: 1rem;
+}
+
+.hero3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 1rem;
+
 }
