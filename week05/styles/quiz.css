@@ -1,0 +1,64 @@
+* , *::before, *::after{
+    box-sizing: border-box;
+}
+
+main {
+    width: 700px;
+    margin: 0 auto;
+    background-color: #d3d3d3;
+    padding: 1.24rem;
+}
+
+fieldset {
+    border: 5px solid #6f0303;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1107a8;
+    padding: 0 10px;
+}
+
+input, select, textarea{
+    font-size: 1.25em;
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+.code{
+    background-color: #09014b;
+    color: #f3f3f3;
+    font-family: monospace;
+    padding: 10px 5px;
+    border-radius: 3px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.number {
+    font-weight: bold;
+    font-size: 2em;
+    color: #6b0353;
+    font-style: italic;
+}
+
+button{
+    font-size: 1.25em;
+    padding: 10px 20px;
+    background-color: #02410e;
+    color: #f3f3f3;
+    border: 5px dashed #011a05;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input:focus, 
+select:focus,
+textarea:focus {
+    outline: 3px solid #6f0303;
+}
