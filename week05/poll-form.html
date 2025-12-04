@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page with some HTML exercises regarding forms">
+    <meta name="author" content="Ezequiel Matias Barjacoba">
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <title>Forms exercises</title>
+</head>
+<body>
+    <header>
+        <h1>WDD130 | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="for-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="for-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="for-item column1">
+                    <label for="browser">What is your favorite browser?:</label>
+                        <select name="browser" id="browser">
+                            <option value="1">Google Chrome</option>
+                            <option value="2">Microsoft Edge</option>
+                            <option value="3">Mozilla Firefox</option>
+                            <option value="4">Brave</option>
+                            <option value="5">Safari</option>
+                        </select>
+                </div>
+                <div class="for-item column1">
+                    <label><input type="checkbox" id="pet" name="pet"> Do you have a household pet?</label>
+                </div>
+                <label for="feedback">List the places you have lived</label>
+                <textarea name="feedback" id="feedback" rows="4" placeholder="Cordoba Argentina, Bahia Brazil"></textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>©️ Ezequiel Matias Barjacoba 2025</p>
+    </footer>
+</body>
+</html>
