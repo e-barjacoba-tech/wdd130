@@ -56,10 +56,11 @@ nav a {
 .hero2 h2 {
     width: 100%;
     padding: 1rem;
-    margin: auto;
+    margin: 0 1rem;
     text-align: center;
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    grid-column: 1 / 4;
 }
 
 .hero article {
@@ -144,12 +145,6 @@ nav a {
     grid-template-rows: 1fr 2fr;
     justify-content: center;
     align-items: center;
-}
-
-.hero2 h2{
-    grid-column: 1 / 4; 
-    text-align: center;
-    margin-bottom: 1rem;
 }
 
 .hero3 {
