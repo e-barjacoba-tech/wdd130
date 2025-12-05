@@ -192,14 +192,4 @@ fieldset {
     margin-bottom: 1rem;
 }
 
-.employees {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    margin-top: 1rem;
-    text-align: center;
-}
 
