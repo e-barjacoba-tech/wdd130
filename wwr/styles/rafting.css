@@ -240,5 +240,9 @@ button {
     border: none;
     border-radius: 0.5rem;
     width: fit-content;
-    
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
 }
