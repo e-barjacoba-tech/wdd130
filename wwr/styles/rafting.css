@@ -2,7 +2,7 @@
     --primary-color: #07403a;
     --secondary-color: #4a3d2f;
     --accent1-color: #000000;
-    --accent2-color: white; 
+    --accent2-color: #f0f0f0; 
     --heading-font: cursive;
     --body-font: sans-serif;
 }
@@ -23,14 +23,18 @@ body {
 header, main, footer{
     width: 840px;
     margin: 0 auto;
+    border-radius: 5px;
 }
 
 h1, 
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent2-color);
+    background-color:var(--primary-color);
+    padding: 1em;
     text-align: center;
     margin-bottom: 1rem;
+    border-radius: 5px;
 }
 
 nav, footer p, section, article {
@@ -293,22 +297,17 @@ input[type="checkbox"] {
     border-radius: 5px;
 
 }
-
-.trips-link a{
-    text-decoration: none;
-    color: var(--accent2-color);
-}
-
 .trips-link p{
     text-align: center;
     align-self: center;
 }
 
-.trips-link button{
-
+.trips-link a{
+    text-decoration: none;
+    color: var(--accent2-color); 
     background-color: var(--secondary-color);
-    color: #f0f0f0;
-    font-size: 1em;
+    font-size: 1.3em;
+
     margin: 0 auto;
     padding: 1em;
     border: none;
@@ -316,9 +315,84 @@ input[type="checkbox"] {
     width: 100%;
     height: 50%;
     cursor: pointer;
+
+    text-align: center;
 }
 
-.trips-link button:hover {
+.trips-link a:hover {
     background-color: var(--primary-color);
 }
 
+/* Class selector for the trips.html page */
+
+.trips {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr) 0.3fr;
+    grid-row-gap: 20px;
+}
+
+.img1, .img3{
+    grid-column: 2 / 3;
+    width: 250px;
+    align-self: center;
+    justify-self: end;
+    border-radius: 5px;
+}
+
+.img2 {
+    grid-column: 1 / 2;
+    width: 250px;
+    align-self: center;
+    border-radius: 5px;
+    
+}
+
+.trips p {
+    align-self: center;
+    justify-self: center;
+    font-size: 1.5em;
+}
+
+.trips a{
+    text-decoration: none;
+    color: var(--accent2-color); 
+
+    background-color: var(--secondary-color);
+    color: #f0f0f0;
+    font-size: 1em;
+    font-family: cursive;
+    padding: 1em;
+    border: none;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+
+    grid-column: 1 / 3;
+}
+.trips a:hover {
+    background-color: var(--primary-color);
+}
+
+/* Class selector for the trips.html table */
+
+table {
+    border-collapse: collapse;
+    border: 2px solid var(--secondary-color);
+    letter-spacing: 1px;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+th, td {
+    text-align: center;
+    border: 3px solid var(--secondary-color);
+    padding: 1rem;
+}
+
+thead th, tfoot tr {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
