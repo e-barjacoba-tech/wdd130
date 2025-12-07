@@ -37,8 +37,7 @@
                 width="500" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <form action="#">
-                <fieldset>
-                    <div class="name-email">
+                <fieldset class="name-email">
                         <label for="fullname">Name</label>
                         <input type="text" id="fullname" name="fullname"
                         required placeholder="Your Name">
@@ -47,8 +46,8 @@
                         <input type="email" id="email" name="email"
                         required placeholder="Your Email">
                     </div>
-
-                    <div class="radio circle">
+                </fieldset>
+                <fieldset class="radio-circle">
                         <h3>Message Purpose</h3>
                         
                         <div class="circle">
@@ -63,16 +62,16 @@
                             <input type="radio" id="suggestion"
                             name="one">
                             <label for="suggestion">Website suggestion</label>
-                            </div>
-                    </div>
-
+                        </div>
+                </fieldset>
+                <fieldset class="message">
                     <label for="message">Message</label>
                     <textarea id="message" name="message"
                     rows="4" required placeholder="Write your message for us"></textarea>
 
                     <div class="checkbox">
                         <label><input type="checkbox" id="subscribe" name="subscribe">
-                        Please, subscribe me to the monthyly newsletter</label>
+                        Please, subscribe me to the monthly newsletter</label>
                     </div>
                 </fieldset>
                 <button type="submit">Get in touch!</button>
